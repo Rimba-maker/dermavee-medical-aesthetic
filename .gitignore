@@ -1,0 +1,22 @@
+dist/
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+.astro/
+
+# Local AI context and confidential build documents
+/PRODUCT.md
+/DESIGN.md
+/docs/private/
+*[Pp][Rr][Dd]*.md
+/.impeccable/
+
+# Local credentials and editor state
+*.pem
+*.key
+.idea/
+.vscode/
+*.log
+Thumbs.db
