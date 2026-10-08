@@ -1,0 +1,87 @@
+.consultation-pricing-header { max-width: 760px; margin-bottom: 36px; }
+.consultation-table-help { margin-bottom: 14px; }
+.consultation-table-scroll { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--white); scrollbar-color: var(--muted) var(--pale); }
+.consultation-price-table { border-collapse: collapse; width: 100%; min-width: 620px; font-variant-numeric: tabular-nums; }
+.consultation-table-caption { text-align: left; padding: 20px 24px; font-weight: 600; color: var(--ink); }
+.consultation-price-table th, .consultation-price-table td { padding: 17px 24px; border-bottom: 1px solid var(--line); text-align: left; }
+.consultation-price-table thead { background: var(--pale); }
+.consultation-price-table thead th { font-size: 14px; font-weight: 600; }
+.consultation-price-table tbody th { font-weight: 400; }
+.consultation-price-table td:nth-child(2) { font-weight: 600; white-space: nowrap; }
+.consultation-price-table td:nth-child(3) { color: var(--muted); white-space: nowrap; }
+.consultation-price-table tbody tr:last-child > * { border-bottom: 0; }
+.consultation-price-table tbody tr:hover { background: var(--surface); }
+.consultation-price-free { color: var(--blue); }
+.consultation-price-note { margin-top: 16px; }
+.consultation-membership { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 32px 0 0; margin-top: 32px; border-top: 1px solid var(--line); }
+.consultation-membership h3 { font: 600 25px/1.3 var(--font-display); margin: 0 0 12px; }
+.consultation-membership p { max-width: 700px; color: var(--muted); margin: 0; }
+.consultation-membership strong { color: var(--ink); }
+.consultation-membership a { flex-shrink: 0; }
+.consultation-faq-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: start; }
+.consultation-faq-guidance { color: var(--muted); margin: 28px 0 24px; max-width: 38ch; }
+.consultation-faq-list { border-top: 1px solid var(--line); }
+.consultation-faq-list details { border-bottom: 1px solid var(--line); }
+.consultation-faq-list summary { cursor: pointer; padding: 24px 8px 24px 0; font: 600 18px/1.5 var(--font-display); color: var(--ink); }
+.consultation-faq-list summary::marker { color: var(--blue); }
+.consultation-faq-list details[open] summary { color: var(--blue); }
+.consultation-faq-answer { padding: 0 24px 24px 0; color: var(--muted); line-height: 1.75; }
+.consultation-faq-answer p { margin: 0; }
+.consultation-disclaimer { margin-top: 28px; padding: 24px; background: var(--surface); color: var(--muted); font-size: 15px; line-height: 1.7; border-radius: 8px; }
+.consultation-disclaimer strong { color: var(--ink); }
+.consultation-booking { scroll-margin-top: 96px; }
+.consultation-booking-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: start; }
+.consultation-intro .section-header { margin-bottom: 32px; }
+.consultation-intro figure { margin: 0 0 28px; }
+.consultation-intro img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.consultation-intro figcaption { margin-top: 10px; }
+.consultation-panel { padding: 36px; background: var(--white); border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.consultation-panel h3 { margin: 0 0 14px; font: 600 25px/1.35 var(--font-display); color: var(--ink); }
+.consultation-required { margin: 0 0 28px; }
+.consultation-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 20px; }
+.consultation-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.consultation-field label, .consultation-concerns legend { font-weight: 600; color: var(--ink); font-size: 16px; }
+.consultation-field input, .consultation-field select, .consultation-field textarea { width: 100%; min-width: 0; min-height: 48px; padding: 11px 13px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--white); font: inherit; caret-color: var(--blue); }
+.consultation-field input::placeholder { color: var(--muted); font-size: 14px; }
+.consultation-field textarea { line-height: 1.6; resize: vertical; }
+.consultation-panel :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--ink); border-width: 2px; }
+.consultation-error { font-size: 14px; color: var(--ink); font-weight: 600; margin: 0; }
+.consultation-concerns { padding: 0; border: 0; margin: 28px 0; min-width: 0; }
+.consultation-concerns > p { margin: 5px 0 12px; }
+.consultation-concerns > div { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.consultation-concerns label { display: flex; align-items: flex-start; gap: 9px; padding: 6px 0; cursor: pointer; font-size: 15px; color: var(--ink); }
+.consultation-concerns input { accent-color: var(--blue); width: 18px; height: 18px; margin: 3px 0 0; flex-shrink: 0; }
+.consultation-date { max-width: 340px; margin-bottom: 24px; }
+.consultation-date .caption { margin: 0; }
+.consultation-doctor { padding: 16px 0; border-top: 1px solid var(--line); margin: 12px 0 24px; overflow-wrap: anywhere; }
+.consultation-doctor p { margin: 0 0 8px; }
+.consultation-notice { color: var(--muted); line-height: 1.65; font-size: 15px; margin: 0 0 24px; }
+.consultation-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.consultation-actions button { cursor: pointer; }
+.consultation-panel .text-link { border: 0; padding: 0; background: transparent; font: inherit; cursor: pointer; color: var(--blue); }
+.consultation-review dl { margin: 28px 0; }
+.consultation-review dl > div { padding: 13px 0; display: grid; grid-template-columns: 150px 1fr; gap: 16px; border-bottom: 1px solid var(--line); }
+.consultation-review dt { color: var(--muted); }
+.consultation-review dd { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.consultation-review > .caption { margin-bottom: 28px; }
+.consultation-copy-status { color: var(--muted); font-size: 15px; margin: 16px 0; }
+.consultation-reset { margin-top: 24px; }
+:is(.consultation-panel, .consultation-faq, .consultation-pricing) :focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+@media (max-width: 1000px) {
+  .consultation-faq-layout { gap: 44px; grid-template-columns: .8fr 1.2fr; }
+  .consultation-booking-layout { gap: 32px; grid-template-columns: .8fr 1.2fr; }
+  .consultation-panel { padding: 28px; }
+  .consultation-fields { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .consultation-faq-layout, .consultation-booking-layout { grid-template-columns: 1fr; gap: 36px; }
+  .consultation-membership { align-items: flex-start; flex-direction: column; gap: 24px; }
+  .consultation-membership h3, .consultation-panel h3 { font-size: 23px; }
+  .consultation-panel { padding: 24px 20px; }
+  .consultation-price-table th, .consultation-price-table td { padding: 16px 18px; }
+  .consultation-faq-list summary { font-size: 17px; }
+  .consultation-intro img { max-height: 340px; }
+  .consultation-review dl > div { grid-template-columns: 1fr; gap: 4px; }
+  .consultation-actions .button { width: 100%; text-align: center; justify-content: center; }
+}
+@media (max-width: 380px) { .consultation-concerns > div { grid-template-columns: 1fr; } }
