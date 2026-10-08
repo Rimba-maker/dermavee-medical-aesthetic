@@ -1,0 +1,43 @@
+---
+const pricingItems = [
+  { treatment: 'Konsultasi Sp.KK + VISIA',       range: 'Gratis (first time)',  freq: 'Per visit'     },
+  { treatment: 'Botox per area',                  range: 'Rp 3 – 6 jt',         freq: '4–6 bulan'     },
+  { treatment: 'Filler HA per syringe',           range: 'Rp 6 – 12 jt',        freq: '12–18 bulan'   },
+  { treatment: 'Skin Booster (Restylane Vital)',  range: 'Rp 4 – 6 jt',         freq: '3 bulan'       },
+  { treatment: 'PicoSure Pro per sesi',           range: 'Rp 2,5 – 4 jt',       freq: '4–6 minggu'    },
+  { treatment: 'Fraxel re:store per sesi',        range: 'Rp 4 – 7 jt',         freq: '1–3 bulan'     },
+  { treatment: 'Morpheus8 per sesi',              range: 'Rp 3,5 – 6 jt',       freq: '4–6 minggu'    },
+  { treatment: 'TCA Peel per sesi',               range: 'Rp 1,5 – 3 jt',       freq: '4–6 minggu'    },
+  { treatment: 'PRP Hair per sesi',               range: 'Rp 2,5 – 4 jt',       freq: '1 bulan'       },
+  { treatment: 'CoolSculpting per area',          range: 'Rp 8 – 15 jt',        freq: '2–3 bulan'     },
+  { treatment: 'Medical Skincare Custom',         range: 'Rp 500k – 2 jt',      freq: 'Monthly'       },
+];
+---
+
+<section id="pricing" class="section section-soft consultation-pricing">
+  <div class="container-dv">
+    <div class="section-header consultation-pricing-header">
+      <h2>Pricing Reference</h2>
+      <p class="lead">Pricing indikatif. Treatment plan final berdasarkan konsultasi dokter.</p>
+    </div>
+    <p class="caption consultation-table-help" id="pricing-table-help">Rentang biaya dan frekuensi sebagai referensi. Pada layar kecil, geser tabel untuk melihat seluruh kolom.</p>
+    <div class="consultation-table-scroll" role="region" aria-label="Tabel harga treatment indikatif" aria-describedby="pricing-table-help" tabindex="0">
+      <table class="consultation-price-table">
+        <caption class="consultation-table-caption">Referensi harga treatment Dermavée</caption>
+        <thead><tr><th scope="col">Treatment</th><th scope="col">Rentang harga</th><th scope="col">Frekuensi</th></tr></thead>
+        <tbody>{pricingItems.map(item => (
+          <tr>
+            <th scope="row">{item.treatment}</th>
+            <td class:list={{ 'consultation-price-free': item.range === 'Gratis (first time)' }}>{item.range}</td>
+            <td>{item.freq}</td>
+          </tr>
+        ))}</tbody>
+      </table>
+    </div>
+    <p class="caption consultation-price-note">Harga dapat berbeda antar cabang. Pricing final setelah konsultasi dokter.</p>
+    <div class="consultation-membership">
+      <div><h3>Dermavée Care Membership</h3><p>Diskon <strong>15% all treatment</strong> + monthly skincare delivery + priority booking + free skin analysis quarterly.</p></div>
+      <a href="#booking" class="button-outline">Info Membership</a>
+    </div>
+  </div>
+</section>
