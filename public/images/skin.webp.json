@@ -1,0 +1,22 @@
+{
+  "filename": "skin.webp",
+  "local_path": "public/images/skin.webp",
+  "origin": "https://www.pexels.com/photo/close-view-of-womans-face-1138531/",
+  "source_url": "https://images.pexels.com/photos/1138531/pexels-photo-1138531.jpeg?auto=compress&w=2000",
+  "provider": "Pexels",
+  "creator": "Jenna Hamra",
+  "role": "Natural skin texture illustration, not patient outcome",
+  "illustrative_only": true,
+  "caption": "Foto ilustrasi; bukan dokumentasi Dermavée atau hasil pasien.",
+  "license_url": "https://www.pexels.com/license/",
+  "observed_at": "2026-10-08",
+  "width": 1200,
+  "height": 750,
+  "bytes": 84592,
+  "webp_quality": 74,
+  "crop": null,
+  "sha256": "ed49a8f50cf93148114587fc854b0d88e19241acc6bec789d7f6b2f583e436cf",
+  "provenance_storage": "sidecar (WebP embed-prompt fallback)",
+  "prompt": "Stock photograph origin: https://www.pexels.com/photo/close-view-of-womans-face-1138531/; creator: Jenna Hamra; illustrative only.",
+  "createdAt": "2026-10-08T16:15:09.944Z"
+}

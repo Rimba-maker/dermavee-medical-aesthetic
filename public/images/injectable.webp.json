@@ -1,0 +1,22 @@
+{
+  "filename": "injectable.webp",
+  "local_path": "public/images/injectable.webp",
+  "origin": "https://www.pexels.com/photo/woman-getting-a-face-botox-3985311/",
+  "source_url": "https://images.pexels.com/photos/3985311/pexels-photo-3985311.jpeg?auto=compress&w=2000",
+  "provider": "Pexels",
+  "creator": "Gustavo Fring",
+  "role": "Injectable facial care illustration",
+  "illustrative_only": true,
+  "caption": "Foto ilustrasi; bukan dokumentasi Dermavée atau hasil pasien.",
+  "license_url": "https://www.pexels.com/license/",
+  "observed_at": "2026-10-08",
+  "width": 1200,
+  "height": 800,
+  "bytes": 21956,
+  "webp_quality": 74,
+  "crop": null,
+  "sha256": "178acec74238a41cbea44363e98a668ef8004dce98100966675f7a9ac9786ac6",
+  "provenance_storage": "sidecar (WebP embed-prompt fallback)",
+  "prompt": "Stock photograph origin: https://www.pexels.com/photo/woman-getting-a-face-botox-3985311/; creator: Gustavo Fring; illustrative only.",
+  "createdAt": "2026-10-08T16:15:09.599Z"
+}

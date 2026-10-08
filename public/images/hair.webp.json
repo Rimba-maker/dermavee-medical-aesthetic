@@ -1,0 +1,22 @@
+{
+  "filename": "hair.webp",
+  "local_path": "public/images/hair.webp",
+  "origin": "https://www.pexels.com/photo/a-woman-brushing-her-long-hair-9475321/",
+  "source_url": "https://images.pexels.com/photos/9475321/pexels-photo-9475321.jpeg?auto=compress&w=2000",
+  "provider": "Pexels",
+  "creator": "Greta Hoffman",
+  "role": "Hair-care illustration, not restoration treatment or outcome",
+  "illustrative_only": true,
+  "caption": "Foto ilustrasi; bukan dokumentasi Dermavée atau hasil pasien.",
+  "license_url": "https://www.pexels.com/license/",
+  "observed_at": "2026-10-08",
+  "width": 1200,
+  "height": 1800,
+  "bytes": 58086,
+  "webp_quality": 74,
+  "crop": null,
+  "sha256": "c558b0fa969f16466dc975cc2a1c0ed032c7e9b9c96f96c8700cf90081ad70c7",
+  "provenance_storage": "sidecar (WebP embed-prompt fallback)",
+  "prompt": "Stock photograph origin: https://www.pexels.com/photo/a-woman-brushing-her-long-hair-9475321/; creator: Greta Hoffman; illustrative only.",
+  "createdAt": "2026-10-08T16:15:09.892Z"
+}

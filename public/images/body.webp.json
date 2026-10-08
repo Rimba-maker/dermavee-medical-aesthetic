@@ -1,0 +1,22 @@
+{
+  "filename": "body.webp",
+  "local_path": "public/images/body.webp",
+  "origin": "https://www.pexels.com/photo/cosmetologist-applying-low-level-laser-to-leg-of-patient-5069506/",
+  "source_url": "https://images.pexels.com/photos/5069506/pexels-photo-5069506.jpeg?auto=compress&w=2000",
+  "provider": "Pexels",
+  "creator": "Anna Shvets",
+  "role": "Generic leg skin treatment, not CoolSculpting proof",
+  "illustrative_only": true,
+  "caption": "Foto ilustrasi; bukan dokumentasi Dermavée atau hasil pasien.",
+  "license_url": "https://www.pexels.com/license/",
+  "observed_at": "2026-10-08",
+  "width": 1200,
+  "height": 1800,
+  "bytes": 63086,
+  "webp_quality": 74,
+  "crop": null,
+  "sha256": "e99664de6a4c2da643f2aacfb3ab32fd3ac8cbee6f324d32e41632e1083e6672",
+  "provenance_storage": "sidecar (WebP embed-prompt fallback)",
+  "prompt": "Stock photograph origin: https://www.pexels.com/photo/cosmetologist-applying-low-level-laser-to-leg-of-patient-5069506/; creator: Anna Shvets; illustrative only.",
+  "createdAt": "2026-10-08T16:15:09.774Z"
+}

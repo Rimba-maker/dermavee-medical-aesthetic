@@ -1,0 +1,22 @@
+{
+  "filename": "analysis.webp",
+  "local_path": "public/images/analysis.webp",
+  "origin": "https://www.pexels.com/photo/woman-having-a-facial-done-by-a-beautician-7446669/",
+  "source_url": "https://images.pexels.com/photos/7446669/pexels-photo-7446669.jpeg?auto=compress&w=2000",
+  "provider": "Pexels",
+  "creator": "Gustavo Fring",
+  "role": "Skin examination illustration, not VISIA device proof",
+  "illustrative_only": true,
+  "caption": "Foto ilustrasi; bukan dokumentasi Dermavée atau hasil pasien.",
+  "license_url": "https://www.pexels.com/license/",
+  "observed_at": "2026-10-08",
+  "width": 1200,
+  "height": 800,
+  "bytes": 28744,
+  "webp_quality": 74,
+  "crop": null,
+  "sha256": "3f5e0514d4041419c7ecef6125e6256eaced174de58e31567a9fa38b1dce7932",
+  "provenance_storage": "sidecar (WebP embed-prompt fallback)",
+  "prompt": "Stock photograph origin: https://www.pexels.com/photo/woman-having-a-facial-done-by-a-beautician-7446669/; creator: Gustavo Fring; illustrative only.",
+  "createdAt": "2026-10-08T16:15:09.640Z"
+}
