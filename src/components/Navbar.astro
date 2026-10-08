@@ -1,0 +1,36 @@
+---
+const links = [
+  { href: '#concerns', label: 'Concerns' },
+  { href: '#treatments', label: 'Treatments' },
+  { href: '#doctors', label: 'Dokter' },
+  { href: '#results', label: 'Hasil' },
+  { href: '#footer', label: 'Cabang' },
+];
+---
+<header id="navbar" class="site-header">
+  <nav class="container-dv site-nav" aria-label="Navigasi utama">
+    <a href="/" class="wordmark" aria-label="Dermavée Medical Aesthetic"><strong>Dermavée</strong><span>Medical Aesthetic</span></a>
+    <ul class="nav-links">{links.map(link => <li><a href={link.href}>{link.label}</a></li>)}</ul>
+    <div class="nav-actions">
+      <a href="#booking" class="button">Book Konsultasi</a>
+      <button id="mobile-toggle" class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="mobile-nav" hidden>
+    <nav class="container-dv" aria-label="Navigasi mobile">{links.map(link => <a href={link.href}>{link.label}</a>)}<a href="#booking">Book Konsultasi</a></nav>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById('mobile-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const setMenu = (open: boolean) => {
+    if (!toggle || !menu) return;
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+  };
+  toggle?.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { setMenu(false); toggle.focus(); } });
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
+</script>

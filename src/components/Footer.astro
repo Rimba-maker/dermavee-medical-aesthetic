@@ -1,0 +1,33 @@
+---
+const links = [
+  { href: '#concerns', label: 'Skin Concerns' },
+  { href: '#treatments', label: 'Medical Treatments' },
+  { href: '#analysis', label: 'Skin Analysis' },
+  { href: '#doctors', label: 'Tim Dokter' },
+  { href: '#technology', label: 'Teknologi' },
+  { href: '#results', label: 'Hasil & Studi Kasus' },
+  { href: '#pricing', label: 'Pricing Reference' },
+];
+---
+<footer id="footer" class="site-footer">
+  <div class="container-dv">
+    <div class="footer-intro">
+      <a href="/" class="wordmark" aria-label="Dermavée Medical Aesthetic"><strong>Dermavée</strong><span>Medical Aesthetic</span></a>
+      <p>Healthy skin, by science, for life.</p>
+    </div>
+    <div class="footer-grid">
+      <div><h3>Kenali Dermavée</h3><ul>{links.map(link => <li><a href={link.href}>{link.label}</a></li>)}</ul><div class="footer-social"><a href="https://instagram.com/dermavee.id" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://tiktok.com/@dermavee" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://youtube.com/@dermavee" target="_blank" rel="noopener noreferrer">YouTube</a></div></div>
+      <div><h3>Cabang</h3><div class="footer-branches">{[
+        { city: 'PIK', region: 'Jakarta Utara' },
+        { city: 'Senopati', region: 'Jakarta Selatan' },
+        { city: 'Surabaya', region: 'Jawa Timur' },
+        { city: 'Medan', region: 'Sumatera Utara' },
+      ].map(branch => <div><strong>{branch.city}</strong><p>{branch.region}</p></div>)}</div></div>
+      <div class="footer-certifications"><h3>Legalitas & sertifikasi</h3><p>Kemenkes RI · IDI · IDDV<br />ISO 9001:2015 · ISO 14001</p><p class="caption" style="margin-top:12px">Referensi legalitas dari brief Dermavée. Dokumen dan status sertifikasi belum diverifikasi untuk publikasi.</p><a href="#booking" class="text-link" style="margin-top:20px">Book Konsultasi</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {new Date().getFullYear()} Dermavée Medical Aesthetic.</p>
+      <details><summary>Privasi & persetujuan pasien</summary><p>Form pada halaman ini menyiapkan rincian konsultasi di browser Anda. Data tidak dikirim atau disimpan oleh website. Dokumen kebijakan privasi, syarat layanan, dan persetujuan tindakan medis klinik belum tersedia di halaman ini; persetujuan tindakan tidak digantikan oleh form konsultasi.</p></details>
+    </div>
+  </div>
+</footer>

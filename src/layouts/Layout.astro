@@ -1,0 +1,67 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Dermavée Medical Aesthetic — Klinik Dermatologi & Anti-Aging Jakarta",
+  description = "Klinik dermatologi medis dipimpin dokter Sp.KK. Treatment acne severe, melasma, anti-aging, scar dengan technology PicoSure, Fraxel, Morpheus8. Free skin analysis.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="klinik dermatologi jakarta, dokter spesialis kulit, melasma treatment, picosure laser, fraxel laser, botox filler jakarta, dermatologist jakarta" />
+
+    <!-- OG Meta -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preload" href="/fonts/manrope-600.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/images/consultation.webp" as="image" fetchpriority="high" />
+    <meta property="og:image" content="/images/consultation.webp" />
+    <meta name="twitter:image" content="/images/consultation.webp" />
+
+    <!-- Schema: MedicalClinic -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dermavée Medical Aesthetic",
+        "description": "Klinik dermatologi medis dipimpin dokter Sp.KK",
+        "medicalSpecialty": "Dermatology",
+        "address": [
+          { "@type": "PostalAddress", "addressLocality": "PIK, Jakarta", "addressCountry": "ID" },
+          { "@type": "PostalAddress", "addressLocality": "Senopati, Jakarta", "addressCountry": "ID" },
+          { "@type": "PostalAddress", "addressLocality": "Surabaya", "addressCountry": "ID" },
+          { "@type": "PostalAddress", "addressLocality": "Medan", "addressCountry": "ID" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="button skip-link">Langsung ke konten</a>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

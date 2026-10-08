@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Pricing from '../components/Pricing.astro';
+
+import Hero from '../components/react/Hero';
+import SkinConcerns from '../components/react/SkinConcerns';
+import MedicalTreatments from '../components/react/MedicalTreatments';
+import SkinAnalysis from '../components/react/SkinAnalysis';
+import Dermatologists from '../components/react/Dermatologists';
+import Technology from '../components/react/Technology';
+import BeforeAfter from '../components/react/BeforeAfter';
+import TreatmentPlans from '../components/react/TreatmentPlans';
+import PatientStories from '../components/react/PatientStories';
+import FAQ from '../components/react/FAQ';
+import BookingCTA from '../components/react/BookingCTA';
+---
+
+<Layout>
+  <!-- 1. Navbar (static) -->
+  <Navbar />
+  <main id="main-content">
+
+  <!-- 2. Hero (client:load — above the fold) -->
+  <Hero client:load />
+
+  <!-- 3. Skin Concerns (client:visible) -->
+  <SkinConcerns client:visible />
+
+  <!-- 4. Medical Treatments (client:visible) -->
+  <MedicalTreatments client:visible />
+
+  <!-- 5. Skin Analysis / VISIA (client:visible) -->
+  <SkinAnalysis client:visible />
+
+  <!-- 6. Dermatologists (client:visible) -->
+  <Dermatologists client:visible />
+
+  <!-- 7. Technology (client:visible) -->
+  <Technology client:visible />
+
+  <!-- 8. Before & After (client:visible) -->
+  <BeforeAfter client:visible />
+
+  <!-- 9. Treatment Plans (client:visible) -->
+  <TreatmentPlans client:visible />
+
+  <!-- 10. Pricing (static .astro) -->
+  <Pricing />
+
+  <!-- 11. Patient Stories (client:visible) -->
+  <PatientStories client:visible />
+
+  <!-- 12. FAQ (client:visible) -->
+  <FAQ client:visible />
+
+  <!-- 13. Booking CTA (client:idle) -->
+  <BookingCTA client:idle />
+  </main>
+
+  <!-- 14. Footer (static) -->
+  <Footer />
+</Layout>
