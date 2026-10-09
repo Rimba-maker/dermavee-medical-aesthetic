@@ -104,7 +104,7 @@ export default function BookingCTA() {
     <div className="container-dv consultation-booking-layout">
       <div className="consultation-intro">
         <div className="section-header"><h2>Mulai Dengan Free Skin Analysis</h2><p className="lead">Konsultasi pertama gratis (skin analysis + dermatologist consultation). Tidak ada commitment treatment.</p></div>
-        <figure><img src="/images/consultation.webp" width="1200" height="800" loading="lazy" className="photo" alt="Ilustrasi percakapan konsultasi antara tenaga medis dan pasien" /><figcaption className="caption">Foto ilustrasi konsultasi, bukan dokumentasi dokter atau cabang Dermavée.</figcaption></figure>
+        <figure><img src={`${import.meta.env.BASE_URL}images/consultation.webp`} width="1200" height="800" loading="lazy" className="photo" alt="Ilustrasi percakapan konsultasi antara tenaga medis dan pasien" /><figcaption className="caption">Foto ilustrasi konsultasi, bukan dokumentasi dokter atau cabang Dermavée.</figcaption></figure>
         <p className="consultation-notice">Form ini menyiapkan ringkasan untuk Anda tinjau dan salin. Data belum dikirim. Kanal booking klinik belum dikonfigurasi.</p>
       </div>
       <div className="consultation-panel">

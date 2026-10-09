@@ -26,7 +26,7 @@ export default function Hero() {
             <a className="text-link" href={concern ? '#concerns' : '#treatments'}>Lihat Treatment</a>
           </div>
           <div className="hero-visual">
-            <motion.img src="/images/consultation.webp" alt="Ilustrasi tenaga medis melakukan perawatan wajah dengan pendekatan personal" width="1600" height="1067" loading="eager" fetchPriority="high" initial={{ clipPath: 'inset(0)' }} animate={{ clipPath: ['inset(0 0 6% 0)', 'inset(0)'] }} transition={{ duration: reduceMotion ? 0 : 1, ease: [0.16, 1, 0.3, 1] }} />
+            <motion.img src={`${import.meta.env.BASE_URL}images/consultation.webp`} alt="Ilustrasi tenaga medis melakukan perawatan wajah dengan pendekatan personal" width="1600" height="1067" loading="eager" fetchPriority="high" initial={{ clipPath: 'inset(0)' }} animate={{ clipPath: ['inset(0 0 6% 0)', 'inset(0)'] }} transition={{ duration: reduceMotion ? 0 : 1, ease: [0.16, 1, 0.3, 1] }} />
           </div>
         </div>
         <p className="caption hero-image-caption">Fotografi ilustratif. Bukan dokumentasi dokter atau pasien Dermavée.</p>

@@ -35,7 +35,7 @@ export default function PatientStories() {
 
         <div className="care-stories-layout" role="region" aria-roledescription="carousel" aria-label="Tiga cerita dalam brief Dermavée">
           <figure className="care-stories-photo">
-            <img className="photo" src="/images/portrait.webp" width="1200" height="1200" loading="lazy" alt="Potret ilustratif untuk mendampingi cerita perawatan kulit" />
+            <img className="photo" src={`${import.meta.env.BASE_URL}images/portrait.webp`} width="1200" height="1200" loading="lazy" alt="Potret ilustratif untuk mendampingi cerita perawatan kulit" />
             <figcaption className="caption">Foto ilustrasi; bukan Bu Indah, Andini, Maya, atau pasien Dermavée.</figcaption>
           </figure>
 

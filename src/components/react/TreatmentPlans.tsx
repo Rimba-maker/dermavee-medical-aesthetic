@@ -38,7 +38,7 @@ export default function TreatmentPlans() {
         <div className="care-journey-layout">
           <div className="care-journey-aside">
             <figure className="care-journey-photo">
-              <img className="photo" src="/images/clinic.webp" width="1200" height="960" loading="lazy" alt="Ilustrasi ruang pelayanan medis yang terang dan tenang" />
+              <img className="photo" src={`${import.meta.env.BASE_URL}images/clinic.webp`} width="1200" height="960" loading="lazy" alt="Ilustrasi ruang pelayanan medis yang terang dan tenang" />
               <figcaption className="caption">Foto ilustrasi ruang pelayanan medis; bukan dokumentasi cabang Dermavée.</figcaption>
             </figure>
             <div className="care-journey-start">

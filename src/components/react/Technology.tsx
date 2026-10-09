@@ -54,7 +54,7 @@ export default function Technology() {
           <div className="technology-photography">
             <figure>
               <img
-                src="/images/laser.webp"
+                src={`${import.meta.env.BASE_URL}images/laser.webp`}
                 alt="Ilustrasi perawatan dengan perangkat klinis generik, bukan PicoSure, Fraxel, atau Morpheus8"
                 className="photo technology-primary-photo"
                 width="1200"
@@ -65,7 +65,7 @@ export default function Technology() {
             </figure>
             <figure className="technology-secondary-figure">
               <img
-                src="/images/analysis.webp"
+                src={`${import.meta.env.BASE_URL}images/analysis.webp`}
                 alt="Ilustrasi evaluasi kulit saat konsultasi, bukan perangkat VISIA"
                 className="photo technology-secondary-photo"
                 width="1200"

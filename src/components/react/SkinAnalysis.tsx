@@ -22,7 +22,7 @@ export default function SkinAnalysis() {
           </div>
           <figure className="analysis-figure">
             <img
-              src="/images/analysis.webp"
+              src={`${import.meta.env.BASE_URL}images/analysis.webp`}
               alt="Ilustrasi konsultasi dan pemeriksaan kulit wajah, bukan mesin VISIA"
               className="photo analysis-photo"
               width="1200"

@@ -147,7 +147,7 @@ export default function SkinConcerns() {
           <div id="concern-detail" className="concern-detail">
             <figure className="concern-figure">
               <img
-                src={`/images/${selected.image}.webp`}
+                src={`${import.meta.env.BASE_URL}images/${selected.image}.webp`}
                 alt={selected.imageAlt}
                 className="photo concern-photo"
                 width="1200"

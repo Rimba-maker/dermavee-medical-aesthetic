@@ -9,7 +9,7 @@ const links = [
 ---
 <header id="navbar" class="site-header">
   <nav class="container-dv site-nav" aria-label="Navigasi utama">
-    <a href="/" class="wordmark" aria-label="Dermavée Medical Aesthetic"><strong>Dermavée</strong><span>Medical Aesthetic</span></a>
+    <a href={import.meta.env.BASE_URL} class="wordmark" aria-label="Dermavée Medical Aesthetic"><strong>Dermavée</strong><span>Medical Aesthetic</span></a>
     <ul class="nav-links">{links.map(link => <li><a href={link.href}>{link.label}</a></li>)}</ul>
     <div class="nav-actions">
       <a href="#booking" class="button">Book Konsultasi</a>

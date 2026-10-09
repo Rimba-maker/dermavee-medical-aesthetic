@@ -9,6 +9,8 @@ npm ci
 npm run dev
 ```
 
+Lokal menggunakan `http://localhost:4321/` dengan base path `/`. Port dikunci: jika `4321` sudah dipakai, server berhenti dengan error, bukan berpindah port otomatis.
+
 ## Build dan pemeriksaan tipe
 
 ```sh
@@ -18,6 +20,19 @@ npm run preview
 ```
 
 Hasil build statis berada di `dist/`.
+
+## Deploy GitHub Pages
+
+Workflow `.github/workflows/deploy-pages.yml` membangun dan menerbitkan website setiap push ke `main`, atau melalui **Actions → Deploy to GitHub Pages → Run workflow**. Pada **Settings → Pages**, gunakan **GitHub Actions** sebagai source.
+
+- URL publik: `https://rimba-maker.github.io/dermavee-medical-aesthetic/`.
+- `npm run build:pages`: memakai site `https://rimba-maker.github.io`, base `/dermavee-medical-aesthetic/`, dan output `dist-pages/`.
+- `npm run preview:pages`: preview di `http://localhost:4322/dermavee-medical-aesthetic/`, terpisah dari server dev port `4321`.
+- Perintah Pages memberikan konfigurasi lewat CLI; tidak mengubah konfigurasi lokal atau file `.env`. Build lokal tetap memakai `dist/`, sehingga tidak tertimpa build Pages.
+- Link beranda, gambar, favicon, dan preload memakai `import.meta.env.BASE_URL`; URL font CSS disesuaikan oleh Vite saat build.
+- GitHub Actions memakai Node.js 24 dan `npm ci` dari `package-lock.json`, lalu hanya mengunggah `dist-pages/`.
+
+Untuk pemeriksaan lokal, selesaikan build sebelum menjalankan server dev agar cache dependency Vite tidak dipakai bersama oleh proses build dan dev.
 
 ## Struktur
 

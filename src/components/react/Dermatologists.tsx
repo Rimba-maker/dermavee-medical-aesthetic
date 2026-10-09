@@ -21,7 +21,7 @@ export default function Dermatologists() {
         <div className="care-doctors-layout">
           <div className="care-doctors-intro">
             <figure className="care-doctors-photo">
-              <img className="photo" src="/images/consultation.webp" width="1600" height="1067" loading="lazy" alt="Ilustrasi tenaga medis berdiskusi dengan seseorang saat konsultasi" />
+              <img className="photo" src={`${import.meta.env.BASE_URL}images/consultation.webp`} width="1600" height="1067" loading="lazy" alt="Ilustrasi tenaga medis berdiskusi dengan seseorang saat konsultasi" />
               <figcaption className="caption">Foto ilustrasi konsultasi; bukan potret dokter dalam direktori.</figcaption>
             </figure>
             <p className="care-doctors-note">Nama, gelar, dan fokus dokter mengikuti brief Dermavée. Profil resmi, pendidikan, serta jadwal praktik perlu dikonfirmasi saat konsultasi.</p>

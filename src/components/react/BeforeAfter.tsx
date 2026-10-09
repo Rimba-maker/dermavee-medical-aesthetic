@@ -72,7 +72,7 @@ export default function BeforeAfter() {
 
         <div className="care-case-layout">
           <figure className="care-case-photo">
-            <img className="photo" src={`/images/${active.image}.webp`} width="1200" height={active.image === 'portrait' ? 1200 : active.image === 'hair' ? 1800 : 750} loading="lazy" alt={active.alt} />
+            <img className="photo" src={`${import.meta.env.BASE_URL}images/${active.image}.webp`} width="1200" height={active.image === 'portrait' ? 1200 : active.image === 'hair' ? 1800 : 750} loading="lazy" alt={active.alt} />
             <figcaption className="caption">Foto ilustrasi topik perawatan; bukan foto before &amp; after.</figcaption>
           </figure>
 

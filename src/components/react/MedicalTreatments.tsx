@@ -96,7 +96,7 @@ export default function MedicalTreatments() {
             <article key={treatment.id} id={treatment.id} className="treatment-entry" aria-labelledby={`${treatment.id}-heading`}>
               <figure>
                 <img
-                  src={`/images/${treatment.image}.webp`}
+                  src={`${import.meta.env.BASE_URL}images/${treatment.image}.webp`}
                   alt={treatment.imageAlt}
                   className="photo treatment-photo"
                   width="1200"

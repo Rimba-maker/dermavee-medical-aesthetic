@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "build:pages": "astro build --site https://rimba-maker.github.io --base /dermavee-medical-aesthetic/ --outDir dist-pages",
+    "preview": "astro preview",
+    "preview:pages": "astro preview --site https://rimba-maker.github.io --base /dermavee-medical-aesthetic/ --outDir dist-pages --port 4322"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.0",
